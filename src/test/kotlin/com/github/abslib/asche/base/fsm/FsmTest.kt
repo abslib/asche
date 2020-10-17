@@ -22,39 +22,5 @@ private val log = KotlinLogging.logger {}
 class FsmTest {
     @Test
     fun testFsmTransition() {
-        val sm = SimpleStateMachine(object : StateBehavior<String, String> {
-            override val state: String
-                get() = "init"
-
-            override fun onEnter(from: String, action: String) {
-                log.info("transition from {} to {} by act: {}", from, state, action)
-            }
-
-            override fun onAction(action: String) {
-                log.info("on action: {}", action)
-            }
-
-            override fun onExit(action: String) {
-            }
-
-        })
-        sm.defTransition("init", "run", object : StateBehavior<String, String> {
-            override val state: String
-                get() = "run"
-
-            override fun onEnter(from: String, action: String) {
-                log.info("transition from {} to {} by act: {}", from, state, action)
-            }
-
-            override fun onAction(action: String) {
-                log.info("on action: {}", action)
-            }
-
-            override fun onExit(action: String) {
-            }
-        }, "run")
-        sm.act("run")
-        log.info("current state: {}", sm.state)
-        sm.act("doSomething")
     }
 }

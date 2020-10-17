@@ -14,41 +14,4 @@
 
 package com.github.abslib.asche.base.event
 
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.yield
-import org.junit.Test
-import java.util.concurrent.LinkedBlockingQueue
-import java.util.concurrent.TimeUnit
-
-class EventSourcedTest {
-    @Test
-    fun testEventSourced() {
-        class StringEvent(val name: String) : BaseEvent
-
-        val es = object : EventSourcedTarget<StringEvent>(BlockingQueueMailBox(LinkedBlockingQueue())) {
-            override fun onReceive(event: StringEvent) {
-                when (event.name) {
-                    "1" -> {
-                        log.info { "receive event 1" }
-                    }
-                    "2" -> {
-                        log.info { "receive event 2" }
-                    }
-                }
-            }
-        }
-        runBlocking {
-            launch {
-                while (true) {
-                    yield()
-                    if (!es.receive()) {
-                        delay(10)
-                    }
-                }
-            }
-            (1..100).forEach { _ -> es.send(StringEvent("2"), 100, TimeUnit.MILLISECONDS) }
-        }
-    }
-}
+class EventSourcedTest
