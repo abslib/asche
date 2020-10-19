@@ -12,7 +12,7 @@
  *    limitations under the License.
  */
 
-package com.github.abslib.asche.domain.actuator
+package com.github.abslib.asche.service.actuator
 
 import kotlinx.coroutines.*
 import mu.KotlinLogging

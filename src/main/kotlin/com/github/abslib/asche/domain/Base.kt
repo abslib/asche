@@ -16,13 +16,18 @@ package com.github.abslib.asche.domain
 
 import com.github.abslib.asche.base.serialize.JsonSerializable
 
+interface ValueObject : JsonSerializable
 
-interface DataModel : JsonSerializable {
+interface DataModel : ValueObject {
     val id: Long
 }
 
-interface DomainTarget<T : DataModel> {
+interface DomainEntity<T : DataModel> {
     val data: T
+    fun save()
+}
+
+interface DomainAggregateRoot {
     fun save()
 }
 
@@ -31,11 +36,11 @@ interface DomainRepository<T : DataModel> {
     fun save(data: T)
 }
 
-interface DomainTargetFactory<M : DataModel, T : DomainTarget<M>> {
+interface DomainEntityFactory<M : DataModel, T : DomainEntity<M>> {
     fun create(id: Long): T
     fun create(data: M): T
 }
 
-interface DomainService<M : DataModel, T : DomainTarget<M>> {
+interface DomainService<M : DataModel, T : DomainEntity<M>> {
     fun retrieveTarget(id: Long): T
 }

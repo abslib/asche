@@ -39,13 +39,13 @@ data class Task(override val id: Long) : DataModel {
     var updateTime: Timestamp? = null
 }
 
-interface TaskProcess : DomainTarget<Task>, EventSourcedProcess, TriggeredProcess {
+interface TaskProcess : DomainEntity<Task>, DomainAggregateRoot, EventSourcedProcess, TriggeredProcess {
     val flow: FlowController
 }
 
 interface TaskRepository : DomainRepository<Task>
 
-interface TaskProcessFactory : DomainTargetFactory<Task, TaskProcess>
+interface TaskProcessFactory : DomainEntityFactory<Task, TaskProcess>
 
 interface TaskService : DomainService<Task, TaskProcess> {
     fun listLocalTaskIds(offset: Int, limit: Int): List<Long>

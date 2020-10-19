@@ -40,11 +40,11 @@ data class Job(override val id: Long) : DataModel {
     var updateTime: Timestamp? = null
 }
 
-interface JobProcess : DomainTarget<Job>, EventSourcedProcess
+interface JobProcess : DomainEntity<Job>, DomainAggregateRoot, EventSourcedProcess
 
 interface JobRepository : DomainRepository<Job>
 
-interface JobProcessFactory : DomainTargetFactory<Job, JobProcess>
+interface JobProcessFactory : DomainEntityFactory<Job, JobProcess>
 
 interface JobService : DomainService<Job, JobProcess> {
     companion object {

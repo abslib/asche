@@ -21,10 +21,10 @@ import com.sun.xml.internal.fastinfoset.util.StringArray
 enum class FlowType { DAG }
 
 interface Flow : DataModel {
-    val type: String
+    val type: FlowType
 }
 
-interface FlowController : DomainTarget<Flow>, EventSourcedProcess {
+interface FlowController : DomainEntity<Flow>, EventSourcedProcess {
     fun addRelation(source: Long, target: Long)
     fun addRelations(relations: List<StringArray>)
     suspend fun onNodeFinish(id: Long)
@@ -44,6 +44,6 @@ interface FlowRepository : DomainRepository<Flow> {
     fun hasRelation(flowId: Long, source: Long, target: Long)
 }
 
-interface FlowFactory : DomainTargetFactory<Flow, FlowController>
+interface FlowFactory : DomainEntityFactory<Flow, FlowController>
 
 interface FlowService : DomainService<Flow, FlowController>

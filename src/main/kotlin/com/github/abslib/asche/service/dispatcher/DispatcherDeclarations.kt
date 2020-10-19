@@ -12,7 +12,7 @@
  *    limitations under the License.
  */
 
-package com.github.abslib.asche.domain.dispatcher
+package com.github.abslib.asche.service.dispatcher
 
 import com.github.abslib.asche.base.concurrent.CoroutinePool
 import com.github.abslib.asche.base.event.*

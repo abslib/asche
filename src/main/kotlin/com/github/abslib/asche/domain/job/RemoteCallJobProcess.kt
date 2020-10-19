@@ -19,8 +19,8 @@ import com.github.abslib.asche.base.fsm.StateBehavior
 import com.github.abslib.asche.base.process.ProcessCtlAction
 import com.github.abslib.asche.base.process.ProcessEvent
 import com.github.abslib.asche.base.process.ProcessState
-import com.github.abslib.asche.domain.dispatcher.sendEvent
 import com.github.abslib.asche.domain.executor.RemoveCallEvent
+import com.github.abslib.asche.service.dispatcher.sendEvent
 import kotlinx.coroutines.ObsoleteCoroutinesApi
 
 internal class RemoteCallJobProcess(data: Job, mailBox: MailBox<ProcessEvent>) : AbstractJobProcess(data, mailBox) {

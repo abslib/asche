@@ -16,9 +16,9 @@ package com.github.abslib.asche.domain.executor
 
 import com.github.abslib.asche.base.event.EventDispatcher
 import com.github.abslib.asche.domain.DataModel
+import com.github.abslib.asche.domain.DomainEntity
+import com.github.abslib.asche.domain.DomainEntityFactory
 import com.github.abslib.asche.domain.DomainService
-import com.github.abslib.asche.domain.DomainTarget
-import com.github.abslib.asche.domain.DomainTargetFactory
 import mu.KotlinLogging
 import java.sql.Timestamp
 import kotlin.properties.Delegates
@@ -37,9 +37,9 @@ data class Executor(override val id: Long) : DataModel {
     var updateTime: Timestamp? = null
 }
 
-interface ExecutorClient : DomainTarget<Executor>, EventDispatcher<ExecEvent>
+interface ExecutorClient : DomainEntity<Executor>, EventDispatcher<ExecEvent>
 
-interface ExecutorClientFactory : DomainTargetFactory<Executor, ExecutorClient>
+interface ExecutorClientFactory : DomainEntityFactory<Executor, ExecutorClient>
 
 interface ExecutorService : DomainService<Executor, ExecutorClient> {
     companion object {

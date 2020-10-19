@@ -12,7 +12,7 @@
  *    limitations under the License.
  */
 
-package com.github.abslib.asche.domain.actuator
+package com.github.abslib.asche.service.actuator
 
 import com.github.abslib.asche.base.concurrent.CoroutinePool
 import com.github.abslib.asche.domain.task.TaskService
