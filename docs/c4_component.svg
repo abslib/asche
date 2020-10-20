@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentScriptType="application/ecmascript" contentStyleType="text/css"
+     height="2195px" preserveAspectRatio="none" style="width:1194px;height:2195px;" version="1.1"
+     viewBox="0 0 1194 2195" width="1194px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="440"
+              x="380.5" y="20.6279">Component diagram for Asche System - API Application
+        </text><!--MD5=[7442f3b126ee602ae02566c1a49e158a]
+cluster api-->
+        <rect fill="#FFFFFF" height="1742" style="stroke: #444444; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"
+              width="933" x="22" y="230.583"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="450.5" y="248.627">«boundary»
+        </text>
+        <text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="116" x="430.5" y="270.0391">API Application
+        </text>
+        <text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="63" x="457" y="287.3066">[Container]
+        </text><!--MD5=[1a1f16fd98d92c9fa1a76a4cdcb93502]
+entity scheCtl-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="220" x="38"
+              y="306.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="110" y="330.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="152" x="72" y="351.3076">Schedule Controller
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="88" x="104" y="368.5752">[Rest Controller]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="150" y="387.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="196"
+              x="48" y="406.376">Allow users to submit or control
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="58"
+              x="119" y="425.4961">task flow.
+        </text><!--MD5=[f080898e750ab93ab404a46c6e5dddac]
+entity mgrCtl-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="219" x="475.5"
+              y="306.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="547" y="330.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="146" x="512" y="351.3076">Manager Controller
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="88" x="541" y="368.5752">[Rest Controller]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="587" y="387.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="199"
+              x="485.5" y="406.376">Allow users to search tasks, get
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="95"
+              x="537.5" y="425.4961">task detail, etc.
+        </text><!--MD5=[ec2dc117a54c2f8bc1509b2ec31d19d9]
+entity execCtl-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="209" x="729.5"
+              y="306.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="796" y="330.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="149" x="759.5" y="351.3076">Executor Controller
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="88" x="790" y="368.5752">[Rest Controller]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="836" y="387.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="169"
+              x="749.5" y="406.376">Allow executors to register/
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="189"
+              x="739.5" y="425.4961">unregister and upload results.
+        </text><!--MD5=[296df57ef9007dac74070e4982c50e2d]
+entity actuator-->
+        <rect fill="#85BBF0" height="112.8691" style="stroke: #78A8D8; stroke-width: 1.5;" width="147" x="293.5"
+              y="316.083"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="329" y="339.835">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="65" x="334.5" y="360.8076">Actuator
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="47" x="343.5" y="378.0752">[Service]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="369" y="396.7559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="127"
+              x="303.5" y="415.876">Task trigger engine.
+        </text><!--MD5=[2b5b80f7068c6a16f141d16022e08ad4]
+entity dispatcher-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="189" x="200.5"
+              y="1368.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="257" y="1392.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="83" x="253.5" y="1413.3076">Dispatcher
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="47" x="271.5" y="1430.5752">[Service]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="297" y="1449.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="210.5" y="1468.376">Decoupling through async
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="114"
+              x="238" y="1487.4961">event mechanism.
+        </text><!--MD5=[ded6a69210fbbc7961dee7b773232267]
+entity es-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="201" x="277.5"
+              y="1596.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="340" y="1620.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="114" x="321" y="1641.3076">EventSourcing
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="34" x="361" y="1658.5752">[Base]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="380" y="1677.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="177"
+              x="287.5" y="1696.376">Providing mailbox and event
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="133"
+              x="311.5" y="1715.4961">sourcing mechanism.
+        </text><!--MD5=[cba6152d516faa15f4832518c7c10885]
+entity execService-->
+        <rect fill="#85BBF0" height="151.1094" style="stroke: #78A8D8; stroke-width: 1.5;" width="218" x="710"
+              y="551.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="781" y="575.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="69" x="784.5" y="596.3076">Executor
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="50" x="794" y="613.5752">[Domain]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="821" y="632.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="174"
+              x="730" y="651.376">Executor Service, manager,
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="198"
+              x="720" y="670.4961">router and send job to executor
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="4"
+              x="817" y="689.6162">.
+        </text><!--MD5=[301774e9455a9ca2ed6e8aa8093c2e54]
+entity flow-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="199" x="261.5"
+              y="798.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="323" y="822.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="37" x="342.5" y="843.3076">Flow
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="50" x="336" y="860.5752">[Domain]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="363" y="879.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="175"
+              x="271.5" y="898.376">Control execution steps in a
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30"
+              x="346" y="917.4961">task.
+        </text><!--MD5=[713b73db6f10ca464231664cf9910668]
+entity job-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="200" x="360"
+              y="1140.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="422" y="1164.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="29" x="445.5" y="1185.3076">Job
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="50" x="435" y="1202.5752">[Domain]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="462" y="1221.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="176"
+              x="370" y="1240.376">Control job state, implement
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="59"
+              x="430.5" y="1259.4961">behavior.
+        </text><!--MD5=[c77a7a9f565a0b8e82ce4b35a94c8a45]
+entity task-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="207" x="222.5"
+              y="561.083"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="288" y="584.835">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="37" x="307.5" y="605.8076">Task
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="50" x="301" y="623.0752">[Domain]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="328" y="641.7559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="183"
+              x="232.5" y="660.876">Control task state, implement
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="59"
+              x="296.5" y="679.9961">behavior.
+        </text><!--MD5=[0686720d71d32ea68f81164171d509ce]
+entity store-->
+        <rect fill="#85BBF0" height="131.9893" style="stroke: #78A8D8; stroke-width: 1.5;" width="213" x="522.5"
+              y="1824.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="591" y="1848.335">«component»
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="41" x="608.5" y="1869.3076">Store
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="37" x="610.5" y="1886.5752">[Ignite]
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="631" y="1905.2559"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="189"
+              x="532.5" y="1924.376">Distributed storage, use Ignite
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119"
+              x="569.5" y="1943.4961">native persistence.
+        </text><!--MD5=[d40ecb68fd03c4f349b7481a726a4cee]
+entity web_app-->
+        <rect fill="#999999" height="115.6006" style="stroke: #8A8A8A; stroke-width: 1.5;" width="204" x="483"
+              y="32.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="104" x="533" y="56.335">«external_system»
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="124" x="523" y="77.3076">Web Application
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="587" y="96.8672"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="163"
+              x="501.5" y="115.9873">Scheduler interface, Allow
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="184"
+              x="493" y="135.1074">customers to view or edit flow
+        </text><!--MD5=[f5c86c611e474c6a0b13474c6cc38f7f]
+entity executor-->
+        <rect fill="#999999" height="96.4805" style="stroke: #8A8A8A; stroke-width: 1.5;" width="201" x="971.5"
+              y="816.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="104" x="1020" y="840.335">«external_system»
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="123" x="1010.5" y="861.3076">Executor Server
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="1074" y="880.8672"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="181"
+              x="981.5" y="899.9873">Execute job set by customer.
+        </text><!--MD5=[86ea32d03d5c7f33f3158a3279efd514]
+entity filesystem-->
+        <rect fill="#438DD5" height="112.8691" style="stroke: #3C7FC0; stroke-width: 1.5;" width="220" x="519"
+              y="2071.583"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="65" x="596.5" y="2095.335">«container»
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="88" x="585" y="2116.3076">File System
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="31" x="613.5" y="2133.5752">[Disk]
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="631" y="2152.2559"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="200"
+              x="529" y="2171.376">Stores search indexes and data
+        </text><!--MD5=[62d8d5761ad496d8b6b5e9971255b7cc]
+link scheCtl to task-->
+        <path d="M142,438.713 C142.44,466.073 147.05,497.143 162,521.583 C175.62,543.863 195.99,562.213 217.77,576.983 "
+              fill="none" id="scheCtl-&gt;task" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="222.14,579.893,216.8572,571.5809,217.9754,577.1261,212.4301,578.2443,222.14,579.893"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="129" x="163" y="492.981">Send event to target
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="94" x="180.5" y="509.5894">[ASYNC, EVENT]
+        </text><!--MD5=[62d8d5761ad496d8b6b5e9971255b7cc]
+link scheCtl to task--><!--MD5=[5c53a25aeaa059910169d14e28fc040d]
+link mgrCtl to task-->
+        <path d="M532.43,438.843 C509.9,465.473 482.67,495.963 456,521.583 C443.31,533.783 429.31,546.073 415.35,557.733 "
+              fill="none" id="mgrCtl-&gt;task" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="411.42,561.003,420.8957,558.3177,415.2623,557.8035,415.7765,552.1701,411.42,561.003"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="139" x="505" y="492.981">Search, read task info
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="74" x="537.5" y="509.5894">[SYNC,HTTP]
+        </text><!--MD5=[f22ca705edcf11c5755be3487779032c]
+link execCtl to execService-->
+        <path d="M830.14,438.613 C828.18,471.473 825.8,511.653 823.74,546.363 " fill="none" id="execCtl-&gt;execService"
+              style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="823.43,551.443,827.9618,542.6987,823.7295,546.452,819.9762,542.2196,823.43,551.443"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="124" x="829" y="484.481">Register/unregister,
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="117" x="834.5" y="502.2354">read executor info
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="74" x="856" y="518.8438">[SYNC,HTTP]
+        </text><!--MD5=[f292b9551054e15a9da580c9d14a28b6]
+link actuator to task-->
+        <path d="M357.95,429.303 C351.93,466.423 343.96,515.503 337.48,555.363 " fill="none" id="actuator-&gt;task"
+              style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="336.62,560.673,342.0103,552.4302,337.4211,555.7376,334.1137,551.1484,336.62,560.673"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="23" x="388.5" y="492.981">Use
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="94" x="353" y="509.5894">[Triggering tasks]
+        </text><!--MD5=[f292b9551054e15a9da580c9d14a28b6]
+link actuator to task--><!--MD5=[d82e725295254c6d31b72b9188f0b715]
+link dispatcher to es-->
+        <path d="M292.64,1500.833 C293.77,1522.353 297.13,1546.023 305,1566.583 C308.33,1575.273 312.72,1583.823 317.7,1592.013 "
+              fill="none" id="dispatcher-&gt;es" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="320.53,1596.533,319.1432,1586.7823,317.8762,1592.2954,312.363,1591.0284,320.53,1596.533"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="144" x="306" y="1546.481">Send event to mailbox
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="115" x="320.5" y="1563.0894">[Route event by type]
+        </text><!--MD5=[51b1faf9b548f5086fc2ba1d9479a36b]
+link es to store-->
+        <path d="M417.6,1728.673 C433.15,1751.133 452.25,1775.433 473,1794.583 C486.53,1807.063 501.94,1818.773 517.69,1829.403 "
+              fill="none" id="es-&gt;store" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="522.14,1832.383,516.8703,1824.0625,517.9797,1829.6095,512.4327,1830.7189,522.14,1832.383"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="145" x="474" y="1774.481">Write event to mailbox
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="139" x="477" y="1791.0894">[Ignite native persistence]
+        </text><!--MD5=[43b6f7a29ef7e05ad19b2bf8fe8893f4]
+link execService to executor-->
+        <path d="M838.34,702.593 C847.48,726.123 860.56,750.643 879,768.583 C905.03,793.903 922.17,783.063 955,798.583 C965.2,803.403 975.74,808.733 986.13,814.213 "
+              fill="none" id="execService-&gt;executor" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="990.57,816.563,984.4852,808.8187,986.1504,814.2249,980.7442,815.8901,990.57,816.563"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="133" x="880" y="748.481">Send job to executor
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="37" x="928" y="765.0894">[HTTP]
+        </text><!--MD5=[414ec841e2e18f6ae1d120140bbeff29]
+link flow to dispatcher-->
+        <path d="M342.73,930.803 C333.15,967.703 322.15,1014.883 316,1057.583 C300.78,1163.273 296.43,1287.153 295.28,1362.993 "
+              fill="none" id="flow-&gt;dispatcher" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="295.2,1368.373,299.3285,1359.4312,295.2716,1363.3735,291.3293,1359.3166,295.2,1368.373"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="72" x="326.5" y="1081.981">Send event
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="91" x="317" y="1098.5894">[ASYNC,EVENT]
+        </text><!--MD5=[ee631d3f6d486fea9b749fcf162ccf5d]
+link job to dispatcher-->
+        <path d="M383.39,1272.843 C374.26,1282.323 365.53,1292.353 358,1302.583 C344.3,1321.193 332.34,1343.253 322.63,1363.913 "
+              fill="none" id="job-&gt;dispatcher" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="320.46,1368.573,327.8672,1362.082,322.558,1364.0345,320.6056,1358.7252,320.46,1368.573"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="72" x="368.5" y="1318.481">Send event
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="91" x="359" y="1335.0894">[ASYNC,EVENT]
+        </text><!--MD5=[0bc559c7bdbd8fbcf75f12b8fd926595]
+link job to es-->
+        <path d="M471.55,1272.763 C481.83,1346.493 490.35,1469.003 455,1566.583 C451.83,1575.343 447.48,1583.883 442.46,1592.033 "
+              fill="none" id="job-&gt;es" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="439.6,1596.523,447.8101,1591.083,442.2872,1592.3065,441.0636,1586.7835,439.6,1596.523"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="127" x="481" y="1423.981">Receive and handle
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="124" x="484.5" y="1441.7354">event from mailbox
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="91" x="501" y="1458.3438">[ASYNC,EVENT]
+        </text><!--MD5=[98300cd795ef8537f6f66d876bf24b7e]
+link job to store-->
+        <path d="M548.48,1272.743 C577.1,1299.003 605.44,1331.813 621,1368.583 C623.16,1373.693 626.72,1677.843 628.25,1819.003 "
+              fill="none" id="job-&gt;store" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="628.31,1824.373,632.2327,1815.3391,628.2671,1819.3732,624.233,1815.4076,628.31,1824.373"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="23" x="676.5" y="1546.481">Use
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="124" x="626" y="1563.0894">[Store job information.]
+        </text><!--MD5=[fe56061557142ef7769f9dfea5114795]
+link task to dispatcher-->
+        <path d="M278.13,693.553 C249.64,738.943 219,802.063 219,863.583 C219,863.583 219,863.583 219,1207.583 C219,1261.903 238.97,1319.913 258.43,1363.563 "
+              fill="none" id="task-&gt;dispatcher" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="260.56,1368.273,260.5029,1358.4243,258.5028,1363.7158,253.2113,1361.7158,260.56,1368.273"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="72" x="229.5" y="1007.481">Send event
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="91" x="220" y="1024.0894">[ASYNC,EVENT]
+        </text><!--MD5=[458a45c954f95a10f1a658bdc3fb67db]
+link task to es-->
+        <path d="M222.39,677.063 C155.16,716.793 80,779.923 80,863.583 C80,863.583 80,863.583 80,1435.583 C80,1534.993 186.59,1596.333 272.27,1629.583 "
+              fill="none" id="task-&gt;es" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="277.11,1631.443,270.1315,1624.4931,272.4396,1629.6577,267.275,1631.9657,277.11,1631.443"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="127" x="81" y="1073.481">Receive and handle
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="124" x="84.5" y="1091.2354">event from mailbox
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="91" x="101" y="1107.8438">[ASYNC,EVENT]
+        </text><!--MD5=[8f56ee3cd8465ef4e7bb6a993029ba6c]
+link task to store-->
+        <path d="M429.64,638.843 C558.3,658.583 761,713.513 761,863.583 C761,863.583 761,863.583 761,1663.583 C761,1721.903 727.81,1778.563 694.72,1820.553 "
+              fill="none" id="task-&gt;store" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="691.52,1824.573,700.2536,1820.0206,694.633,1820.6603,693.9933,1815.0398,691.52,1824.573"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="23" x="813.5" y="1204.481">Use
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="126" x="762" y="1221.0894">[Store task information]
+        </text><!--MD5=[59679afb68994650bc6db1fecbcdbf1d]
+link web_app to mgrCtl-->
+        <path d="M585,148.923 C585,193.073 585,254.313 585,301.393 " fill="none" id="web_app-&gt;mgrCtl"
+              style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666" points="585,306.483,589,297.483,585,301.483,581,297.483,585,306.483"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="23" x="611.5" y="194.481">Use
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="74" x="586" y="211.0894">[SYNC,HTTP]
+        </text><!--MD5=[8fd2050605b2a3fb86b8c98506d7dabc]
+link web_app to scheCtl-->
+        <path d="M482.88,121.583 C419.53,143.293 338.57,176.863 276,222.583 C245.95,244.543 218.26,274.853 196.38,302.413 "
+              fill="none" id="web_app-&gt;scheCtl" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="193.19,306.453,201.9052,301.8656,196.2873,302.5279,195.625,296.9099,193.19,306.453"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="23" x="377.5" y="194.481">Use
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="82" x="348" y="211.0894">[ASYNC,HTTP]
+        </text><!--MD5=[ec819b31d1041ad7384bf6e24d258ead]
+link web_app to execCtl-->
+        <path d="M642.33,148.633 C664.53,171.253 689.87,197.753 712,222.583 C734.7,248.053 758.69,276.893 779.33,302.363 "
+              fill="none" id="web_app-&gt;execCtl" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="782.61,306.423,780.0602,296.9099,779.4657,302.5355,773.8401,301.9409,782.61,306.423"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="122" x="703" y="194.481">Manager executors
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="74" x="727" y="211.0894">[SYNC,HTTP]
+        </text><!--MD5=[5507ba083ee8ca220cecd34c26ee2213]
+link executor to execCtl-->
+        <path d="M1069.47,816.453 C1063.19,737.803 1041.37,577.673 966,468.583 C959.26,458.823 951.18,449.713 942.38,441.293 "
+              fill="none" id="executor-&gt;execCtl" style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="938.56,437.733,942.3913,446.8061,942.2081,441.1522,947.862,440.9691,938.56,437.733"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="124" x="1054" y="616.481">Register/unregister,
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="83" x="1076.5" y="634.2354">report results
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="74" x="1081" y="650.8438">[SYNC,HTTP]
+        </text><!--MD5=[808a8ff717d3f360a61b1f1dc2563861]
+link store to filesystem-->
+        <path d="M629,1956.873 C629,1990.983 629,2032.473 629,2065.953 " fill="none" id="store-&gt;filesystem"
+              style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666" points="629,2071.263,633,2062.263,629,2066.263,625,2062.263,629,2071.263"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="144" x="630" y="2004.481">Write data to disk from
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="52" x="678" y="2022.2354">memory
+        </text>
+        <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="48" x="680" y="2038.8438">[ASYNC]
+        </text><!--MD5=[c78f4d66828ee1ed6d47afabee45d550]
+link task to job--><!--MD5=[736a83f767242e3804b6fc66c1833ee0]
+link task to flow--><!--MD5=[736a83f767242e3804b6fc66c1833ee0]
+link task to flow-->
+        <path d="M335.7,693.373 C340.33,724.513 345.87,761.803 350.59,793.533 " fill="none" id="task-&gt;flow"
+              style="stroke: #666666; stroke-width: 1.0;"/>
+        <polygon fill="#666666"
+                 points="351.34,798.573,353.958,789.0785,350.5969,793.6285,346.0468,790.2674,351.34,798.573"
+                 style="stroke: #666666; stroke-width: 1.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="23" x="348" y="756.981">Use
+        </text><!--MD5=[80b354a153f11d724764d30091a99ea3]
+link flow to job-->
+        <path d="M379.97,930.733 C397.52,990.993 423.46,1080.083 441.01,1140.363 " fill="none" id="flow-job"
+              style="stroke: #666666; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56"
+              x="409" y="1015.335">Use job id
+        </text><!--MD5=[b47f056733ecee55de5a072f46162e98]
+@startuml
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam database<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+
+
+
+
+title Component diagram for Asche System - API Application
+
+rectangle "==Web Application\n\n Scheduler interface, Allow customers to view or edit flow" <<external_system>> as web_app
+rectangle "==Executor Server\n\n Execute job set by customer." <<external_system>> as executor
+rectangle "==File System\n//<size:12>[Disk]</size>//\n\n Stores search indexes and data" <<container>> as filesystem
+
+rectangle "==API Application\n<size:12>[Container]</size>" <<boundary>> as api {
+    rectangle "==Schedule Controller\n//<size:12>[Rest Controller]</size>//\n\n Allow users to submit or control task flow." <<component>> as scheCtl
+    rectangle "==Manager Controller\n//<size:12>[Rest Controller]</size>//\n\n Allow users to search tasks, get task detail, etc." <<component>> as mgrCtl
+    rectangle "==Executor Controller\n//<size:12>[Rest Controller]</size>//\n\n Allow executors to register/unregister and upload results." <<component>> as execCtl
+
+    rectangle "==Actuator\n//<size:12>[Service]</size>//\n\n Task trigger engine." <<component>> as actuator
+    rectangle "==Dispatcher\n//<size:12>[Service]</size>//\n\n Decoupling through async event mechanism." <<component>> as dispatcher
+    rectangle "==EventSourcing\n//<size:12>[Base]</size>//\n\n Providing mailbox and event sourcing mechanism." <<component>> as es
+    rectangle "==Executor\n//<size:12>[Domain]</size>//\n\n Executor Service, manager, router and send job to executor." <<component>> as execService
+    rectangle "==Flow\n//<size:12>[Domain]</size>//\n\n Control execution steps in a task." <<component>> as flow
+    rectangle "==Job\n//<size:12>[Domain]</size>//\n\n Control job state, implement behavior." <<component>> as job
+    rectangle "==Task\n//<size:12>[Domain]</size>//\n\n Control task state, implement behavior." <<component>> as task
+    rectangle "==Store\n//<size:12>[Ignite]</size>//\n\n Distributed storage, use Ignite native persistence." <<component>> as store
+
+    scheCtl - -> task : "===Send event to target\n//<size:12>[ASYNC, EVENT]</size>//"
+    mgrCtl - -> task : "===Search, read task info\n//<size:12>[SYNC,HTTP]</size>//"
+    execCtl - -> execService : "===Register/unregister, read executor info\n//<size:12>[SYNC,HTTP]</size>//"
+
+    actuator - -> task : "===Use\n//<size:12>[Triggering tasks]</size>//"
+    dispatcher - -> es : "===Send event to mailbox\n//<size:12>[Route event by type]</size>//"
+    es - -> store : "===Write event to mailbox\n//<size:12>[Ignite native persistence]</size>//"
+    execService - -> executor : "===Send job to executor\n//<size:12>[HTTP]</size>//"
+    flow - -> dispatcher : "===Send event\n//<size:12>[ASYNC,EVENT]</size>//"
+
+    job - -> dispatcher : "===Send event\n//<size:12>[ASYNC,EVENT]</size>//"
+    job - -> es : "===Receive and handle event from mailbox\n//<size:12>[ASYNC,EVENT]</size>//"
+    job - -> store : "===Use\n//<size:12>[Store job information.]</size>//"
+
+    task - -> dispatcher : "===Send event\n//<size:12>[ASYNC,EVENT]</size>//"
+    task - -> es : "===Receive and handle event from mailbox\n//<size:12>[ASYNC,EVENT]</size>//"
+    task - -> store : "===Use\n//<size:12>[Store task information]</size>//"
+}
+
+web_app - -> mgrCtl : "===Use\n//<size:12>[SYNC,HTTP]</size>//"
+web_app - -> scheCtl : "===Use\n//<size:12>[ASYNC,HTTP]</size>//"
+web_app - -> execCtl : "===Manager executors\n//<size:12>[SYNC,HTTP]</size>//"
+executor - -> execCtl : "===Register/unregister, report results\n//<size:12>[SYNC,HTTP]</size>//"
+store - -> filesystem : "===Write data to disk from memory\n//<size:12>[ASYNC]</size>//"
+
+task -[hidden]U- scheCtl
+actuator -[hidden]D- task
+job -[hidden]U- task
+flow -[hidden]L- task
+task - -> flow : "===Use"
+flow ... job: Use job id
+
+@enduml
+
+PlantUML version 1.2020.09(Sun May 10 18:51:06 CST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-b944.34
+Operating System: Windows 10
+Default Encoding: GBK
+Language: zh
+Country: CN
+-->
+    </g>
+</svg>
