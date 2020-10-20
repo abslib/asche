@@ -1,22 +1,23 @@
 @startuml
 !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
 
-title System Context diagram for Asche
+title Container diagram for Asche System
 
 Person(user, "Customer", "Creator of flow and scheduler.")
 
 Enterprise_Boundary(c0, "Platform") {
     System_Ext(web_app, "Web Application", "Scheduler interface, Allow customers to view or edit flow")
-    System(asche, "Asche", "Schedule tasks according to the user's schedule.")
+    System_Boundary(c1, "Asche") {
+        Container(asche, "API Application", "Kotlin, Vertex, Ignite", "Provides scheduler functionality via API.")
+    }
 }
 
 System_Ext(executor, "Executor Server", "Execute job set by customer.")
 Rel_D(user, web_app, "sync, JSON/HTTP")
 Rel_Back(user, web_app, "sync, JSON/HTTP")
 
-Rel_R(web_app, executor, "async, JSON/HTTP")
+Rel_R(web_app, asche, "async, JSON/HTTP")
 
 Rel_D(asche, "executor", "async, JSON/HTTP")
 Rel_Back(asche, "executor", "async, JSON/HTTP")
-
 @enduml
