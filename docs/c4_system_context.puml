@@ -1,0 +1,22 @@
+@startuml
+!include lib/C4_Context.puml
+
+title System Context diagram for Asche
+
+Person(user, "Customer", "Creator of flow and scheduler.")
+
+Enterprise_Boundary(c0, "Platform") {
+    System_Ext(web_app, "Web Application", "Scheduler interface, Allow customers to view or edit flow")
+    System(asche, "Asche", "Schedule tasks according to the user's schedule.")
+}
+
+System_Ext(executor, "Executor Server", "Execute job set by customer.")
+Rel_D(user, web_app, "sync, JSON/HTTP")
+Rel_Back(user, web_app, "sync, JSON/HTTP")
+
+Rel_R(web_app, executor, "async, JSON/HTTP")
+
+Rel_D(asche, "executor", "async, JSON/HTTP")
+Rel_Back(asche, "executor", "async, JSON/HTTP")
+
+@enduml
