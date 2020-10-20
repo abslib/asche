@@ -1,8 +1,8 @@
 # asche
 distributed scheduler
 
-![System context](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://abslib.github.io/asche/c4_system_context.puml)
+![System context](https://abslib.github.io/asche/c4_system_context.svg)
 
-![Container](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://abslib.github.io/asche/c4_container.puml)
+![Container](https://abslib.github.io/asche/c4_container.svg)
 
-![Component](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://abslib.github.io/asche/c4_component.puml)
+![Component](https://abslib.github.io/asche/c4_component.svg)
