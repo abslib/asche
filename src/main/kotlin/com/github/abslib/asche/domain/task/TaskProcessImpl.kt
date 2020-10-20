@@ -27,6 +27,10 @@ internal class TaskProcessImpl(
     mailBox: MailBox<ProcessEvent>
 ) : TaskProcess, TriggeredEventProcess(ProcessState.valueOf(data.state), mailBox) {
     lateinit var taskRepository: TaskRepository
+
+    override val id: Long
+        get() = data.id
+
     override fun save() {
         taskRepository.save(this.data)
     }

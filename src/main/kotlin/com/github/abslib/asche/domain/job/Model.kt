@@ -46,11 +46,11 @@ interface JobRepository : DomainRepository<Job>
 
 interface JobProcessFactory : DomainEntityFactory<Job, JobProcess>
 
-interface JobService : DomainService<Job, JobProcess> {
+interface JobService : DomainService<JobProcess> {
     companion object {
         val ins: JobService by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
             object : JobService {
-                override fun retrieveTarget(id: Long): JobProcess {
+                override fun retrieveAggregateRoot(id: Long): JobProcess {
                     TODO("Not yet implemented")
                 }
             }

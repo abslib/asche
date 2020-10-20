@@ -23,14 +23,17 @@ import com.github.abslib.asche.base.process.ProcessEvent
 import com.github.abslib.asche.base.process.ProcessState
 
 internal class TransitionalJobProcess(data: Job, mailBox: MailBox<ProcessEvent>) : AbstractJobProcess(data, mailBox) {
+    override val id: Long
+        get() = id
+
     override val fsm: StateMachine<ProcessState, ProcessEvent>
         get() {
             return SimpleStateMachine(behavior(ProcessState.valueOf(data.state)))
-                .defTransition(
-                    ProcessState.INIT,
-                    ProcessState.COMPLETED, behavior(ProcessState.COMPLETED),
-                    ProcessCtlAction.START
-                )
+                    .defTransition(
+                            ProcessState.INIT,
+                            ProcessState.COMPLETED, behavior(ProcessState.COMPLETED),
+                            ProcessCtlAction.START
+                    )
         }
 
     override fun behavior(state: ProcessState): StateBehavior<ProcessState, ProcessEvent> {

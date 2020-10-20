@@ -15,10 +15,7 @@
 package com.github.abslib.asche.domain.executor
 
 import com.github.abslib.asche.base.event.EventDispatcher
-import com.github.abslib.asche.domain.DataModel
-import com.github.abslib.asche.domain.DomainEntity
-import com.github.abslib.asche.domain.DomainEntityFactory
-import com.github.abslib.asche.domain.DomainService
+import com.github.abslib.asche.domain.*
 import mu.KotlinLogging
 import java.sql.Timestamp
 import kotlin.properties.Delegates
@@ -37,15 +34,15 @@ data class Executor(override val id: Long) : DataModel {
     var updateTime: Timestamp? = null
 }
 
-interface ExecutorClient : DomainEntity<Executor>, EventDispatcher<ExecEvent>
+interface ExecutorClient : DomainEntity<Executor>, DomainAggregateRoot, EventDispatcher<ExecEvent>
 
 interface ExecutorClientFactory : DomainEntityFactory<Executor, ExecutorClient>
 
-interface ExecutorService : DomainService<Executor, ExecutorClient> {
+interface ExecutorService : DomainService<ExecutorClient> {
     companion object {
         val ins: ExecutorService by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
             object : ExecutorService {
-                override fun retrieveTarget(id: Long): ExecutorClient {
+                override fun retrieveAggregateRoot(id: Long): ExecutorClient {
                     TODO("Not yet implemented")
                 }
             }

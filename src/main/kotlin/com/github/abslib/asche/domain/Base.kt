@@ -28,6 +28,7 @@ interface DomainEntity<T : DataModel> {
 }
 
 interface DomainAggregateRoot {
+    val id: Long
     fun save()
 }
 
@@ -41,6 +42,6 @@ interface DomainEntityFactory<M : DataModel, T : DomainEntity<M>> {
     fun create(data: M): T
 }
 
-interface DomainService<M : DataModel, T : DomainEntity<M>> {
-    fun retrieveTarget(id: Long): T
+interface DomainService<T : DomainAggregateRoot> {
+    fun retrieveAggregateRoot(id: Long): T
 }

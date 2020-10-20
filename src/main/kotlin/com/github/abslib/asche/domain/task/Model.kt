@@ -47,7 +47,7 @@ interface TaskRepository : DomainRepository<Task>
 
 interface TaskProcessFactory : DomainEntityFactory<Task, TaskProcess>
 
-interface TaskService : DomainService<Task, TaskProcess> {
+interface TaskService : DomainService<DomainAggregateRoot> {
     fun listLocalTaskIds(offset: Int, limit: Int): List<Long>
     fun pollActiveTaskProcess(): TaskProcess?
     fun activeTaskProcess(id: Long)
@@ -67,7 +67,7 @@ interface TaskService : DomainService<Task, TaskProcess> {
                     TODO("Not yet implemented")
                 }
 
-                override fun retrieveTarget(id: Long): TaskProcess {
+                override fun retrieveAggregateRoot(id: Long): TaskProcess {
                     TODO("Not yet implemented")
                 }
             }

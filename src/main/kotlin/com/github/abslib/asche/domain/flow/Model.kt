@@ -24,7 +24,7 @@ interface Flow : DataModel {
     val type: FlowType
 }
 
-interface FlowController : DomainEntity<Flow>, EventSourcedProcess {
+interface FlowController : DomainEntity<Flow>, DomainAggregateRoot, EventSourcedProcess {
     fun addRelation(source: Long, target: Long)
     fun addRelations(relations: List<StringArray>)
     suspend fun onNodeFinish(id: Long)
@@ -46,4 +46,4 @@ interface FlowRepository : DomainRepository<Flow> {
 
 interface FlowFactory : DomainEntityFactory<Flow, FlowController>
 
-interface FlowService : DomainService<Flow, FlowController>
+interface FlowService : DomainService<FlowController>

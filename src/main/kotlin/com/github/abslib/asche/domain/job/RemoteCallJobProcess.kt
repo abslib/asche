@@ -24,6 +24,9 @@ import com.github.abslib.asche.service.dispatcher.sendEvent
 import kotlinx.coroutines.ObsoleteCoroutinesApi
 
 internal class RemoteCallJobProcess(data: Job, mailBox: MailBox<ProcessEvent>) : AbstractJobProcess(data, mailBox) {
+    override val id: Long
+        get() = data.id
+
     override fun behavior(state: ProcessState): StateBehavior<ProcessState, ProcessEvent> {
         return when (state) {
             ProcessState.INIT -> JobInitBehavior(this)
