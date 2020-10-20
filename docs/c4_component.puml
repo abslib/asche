@@ -1,0 +1,56 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+
+title Component diagram for Asche System - API Application
+
+System_Ext(web_app, "Web Application", "Scheduler interface, Allow customers to view or edit flow")
+System_Ext(executor, "Executor Server", "Execute job set by customer.")
+Container(filesystem, "File System", "Disk", "Stores search indexes and data")
+
+Container_Boundary(api, "API Application") {
+    Component(scheCtl, "Schedule Controller", "Rest Controller", "Allow users to submit or control task flow.")
+    Component(mgrCtl, "Manager Controller", "Rest Controller", "Allow users to search tasks, get task detail, etc.")
+    Component(execCtl, "Executor Controller", "Rest Controller", "Allow executors to register/unregister and upload results.")
+
+    Component(actuator, "Actuator", "Service", "Task trigger engine.")
+    Component(dispatcher, "Dispatcher", "Service", "Decoupling through async event mechanism.")
+    Component(es, "EventSourcing", "Base", "Providing mailbox and event sourcing mechanism.")
+    Component(execService, "Executor", "Domain", "Executor Service, manager, router and send job to executor.")
+    Component(flow, "Flow", "Domain", "Control execution steps in a task.")
+    Component(job, "Job", "Domain", "Control job state, implement behavior.")
+    Component(task, "Task", "Domain", "Control task state, implement behavior.")
+    Component(store, "Store", "Ignite", "Distributed storage, use Ignite native persistence.")
+
+    Rel(scheCtl, task, "Send event to target", "ASYNC, EVENT")
+    Rel(mgrCtl, task, "Search, read task info", "SYNC,HTTP")
+    Rel(execCtl, execService, "Register/unregister, read executor info", "SYNC,HTTP")
+
+    Rel(actuator, task, "Use", "Triggering tasks")
+    Rel(dispatcher, es, "Send event to mailbox", "Route event by type")
+    Rel(es, store, "Write event to mailbox", "Ignite native persistence")
+    Rel(execService, executor, "Send job to executor", "HTTP")
+    Rel(flow, dispatcher, "Send event", "ASYNC,EVENT")
+
+    Rel(job, dispatcher, "Send event", "ASYNC,EVENT")
+    Rel(job, es, "Receive and handle event from mailbox", "ASYNC,EVENT")
+    Rel(job, store, "Use", "Store job information.")
+
+    Rel(task, dispatcher, "Send event", "ASYNC,EVENT")
+    Rel(task, es, "Receive and handle event from mailbox", "ASYNC,EVENT")
+    Rel(task, store, "Use", "Store task information")
+}
+
+Rel(web_app, mgrCtl, "Use", "SYNC,HTTP")
+Rel(web_app, scheCtl, "Use", "ASYNC,HTTP")
+Rel(web_app, execCtl, "Manager executors", "SYNC,HTTP")
+Rel(executor, execCtl, "Register/unregister, report results", "SYNC,HTTP")
+Rel(store, filesystem, "Write data to disk from memory", "ASYNC")
+
+Lay_U(task, scheCtl)
+Lay_D(actuator, task)
+Lay_U(job, task)
+Lay_L(flow, task)
+Rel(task, flow, "Use")
+flow ... job: Use job id
+
+@enduml
